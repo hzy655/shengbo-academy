@@ -322,6 +322,6 @@ function getQuizQuestions(courseId) {
 
 /* 考核及格线等元数据 */
 function getQuizMeta(courseId) {
-  var layer = Store.getcourseLayer();
+  var layer = Store.getCourseLayer();
   return layer.quizMeta[courseId] || { passScore: 60 };
 }
